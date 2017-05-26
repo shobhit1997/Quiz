@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/history">
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question:"
+        android:textAllCaps="true"
+        android:textColor="#641E16"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/NextQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question:"
+        android:textAllCaps="true"
+        android:textColor="#641E16"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1
+"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/Option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Check"
+            android:textColor="#641E16"
+            android:text="Option 1" />
+
+        <RadioButton
+            android:id="@+id/Option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Check"
+            android:textColor="#641E16"
+            android:text="Option 2" />
+
+        <RadioButton
+            android:id="@+id/Option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Check"
+            android:textColor="#641E16"
+            android:text="Option 3" />
+
+        <RadioButton
+            android:id="@+id/Option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Check"
+            android:textColor="#641E16"
+            android:text="Option 4" />
+
+    </RadioGroup>
+    <ImageView    android:id="@+id/photo_image_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/thinking" />
+
+
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="next"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/skipbutton"
+        />
+
+</LinearLayout>
